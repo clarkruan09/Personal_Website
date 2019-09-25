@@ -3733,30 +3733,57 @@ p {
 	font-size: 18px !important;
 }
 
-#companycontainer {
-	display: flex;
-	flex-direction: row;
-	margin-top: 3em;
+@media only screen and (min-width: 600px) {
+	#companycontainer {
+		display: flex;
+		flex-direction: row;
+		margin-top: 3em;
+	}
+
+	.companytitle {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.companycontent {
+		margin-left: 3.5em;
+		margin-right: 2em;
+	}
+
+	.companyimg {
+		border-radius: 100% !important;
+		width: 15vw;
+		height: 15vw;
+		vertical-align: middle;
+		display: inline-block;
+		margin-left: 2em;
+	}
 }
 
-.companytitle {
-	margin: 0 !important;
-    padding: 0 !important;
-}
+@media only screen and (max-width: 600px) {
+	#companycontainer {
+		display: flex;
+		flex-direction: column;
+		margin-top: 3em;
+		align-items: center;
+	}
 
-.companycontent {
-	margin-left: 3.5em;
-	margin-right: 2em;
-}
+	.companytitle {
+		margin: 0 !important;
+		padding: 0 !important;
+		text-align: center;
+	}
 
-.companyimg {
-	border-radius: 100% !important;
-	width: 15vw;
-	height: 15vw;
-	vertical-align: middle;
-	display: inline-block;
-	margin-left: 2em;
-}
+	.companycontent {
+		text-align: center;
+	}
 
+	.companyimg {
+		border-radius: 100% !important;
+		width: 25vw;
+		height: 25vw;
+		display: inline-block;
+	}
+}
 /***鼠标悬浮图片旋转360度 begin***/
 
